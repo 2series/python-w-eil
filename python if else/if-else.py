@@ -1,5 +1,5 @@
 number = 10
-guess = 10
+guess = 14
 
 if guess > number:
     print('HIGH')
