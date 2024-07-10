@@ -1,6 +1,6 @@
 while True:
     text = input('Text to Clean: ')
-
+        
     print(text.upper())
     print(text.lower())
     print(text.title())
