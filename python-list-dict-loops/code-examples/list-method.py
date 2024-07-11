@@ -1,4 +1,4 @@
-my_list = ['tommy','bob', 'sue', 'tim', 'patty']
+my_list = ['tommy', 'bob', 'sue', 'tim', 'patty']
 
 my_list.sort()
 print(my_list)
