@@ -4,12 +4,12 @@ while True:
     if command == 'new':
         name = input('Name: ')
         age = input('Age: ')
-        with open('record.txt', 'a') as file_write:
+        with open('record.csv', 'a') as file_write:
             file_write.write(f'{name},{age}\n')
 
     if command == 'search':
         query = input('Query: ')
-        with open('record.txt','r') as file_read:
+        with open('record.csv','r') as file_read:
             file_read = file_read.readlines()
         
         for record in file_read:
