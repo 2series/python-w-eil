@@ -1,4 +1,4 @@
-money = {'owed':0.00, 'monthly_payment':0.00}
+money = {'owed':0.00, 'monthly_payment':0.00} # dict
 years = 0
 
 money['owed'] = float(input('Starting Bill: '))

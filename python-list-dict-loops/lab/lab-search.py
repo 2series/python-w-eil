@@ -4,7 +4,7 @@ students = [{'name':'bob', 'age':19},
             {'name':'bill', 'age':33},
             {'name':'bobby', 'age':66},
             {'name':'bonnie', 'age':9},
-            {'name':'phil', 'age':15}]
+            {'name':'phil', 'age':15}] # nested dict
 
 while True:
     min_age = int(input('Minimum Age: '))

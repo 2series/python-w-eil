@@ -9,4 +9,4 @@ print(nested[2]['name'])
 
 for record in nested:
     if record['age'] > 21:
-        print(f'{record['name']} - {record['age']}')
+        print(f' {record['name']} - {record['age']}')
