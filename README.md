@@ -11,3 +11,5 @@ July 12, Read and Write to Files
 July 16, HTML Introduction
 
 July 18, CSS Introduction
+
+July 31, REST API
