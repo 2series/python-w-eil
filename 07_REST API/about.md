@@ -19,5 +19,5 @@ The class will go over:
 >THEN upload them to a Jamf Pro server via the Jamf Pro API.
 
 i want to create a Python project that can scrape text
-using REST APIs from websites
+using REST APIs from websites, https://ip-api.com/
 using the Python Requests module and then parse the JSON data
