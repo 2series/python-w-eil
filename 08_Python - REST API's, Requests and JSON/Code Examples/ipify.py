@@ -1,3 +1,9 @@
+# script response with your IP address
+# in text, json format
+
+# docs https://www.ipify.org/
+# IP Geolocation API https://ip-api.com/
+
 from requests import get
 
 result = get('https://api.ipify.org')
