@@ -18,6 +18,6 @@ The class will go over:
 >>e.g., I want to create a project that can generate shell scripts from yaml files
 >THEN upload them to a Jamf Pro server via the Jamf Pro API.
 
-i want to create a Python project that can scrape text
+i want to create a Python project that can scrape tender
 using REST APIs from websites, https://ip-api.com/
 using the Python Requests module and then parse the JSON data
