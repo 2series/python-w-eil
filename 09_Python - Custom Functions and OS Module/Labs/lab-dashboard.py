@@ -1,7 +1,7 @@
 import os
 from time import sleep
 
-site = ['cnn.com', 'fox.com', 'tacobell.com', 'notarealsite.tv']
+site = ['cnn.com', 'fox.com', 'tacobell.com', 'notarealsite.tv', 'w3schools.com', 'sabcsport.com']
 header = '<meta http-equiv="refresh" content="5">'
 
 def status(site):
