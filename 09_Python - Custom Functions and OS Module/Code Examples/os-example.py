@@ -1,6 +1,6 @@
 import os
 
-print(os.name)
+# print(os.name)
 
 # print(os.getcwd())
 
@@ -12,4 +12,4 @@ print(os.name)
 
 # print(path)
 
-# os.mkdir('test for class')
+os.mkdir('test for class')
