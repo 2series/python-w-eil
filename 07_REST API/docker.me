@@ -1,0 +1,16 @@
+- PROJECT OVERVIEW: Learn how to containerize and deploy a Python application using Docker.
+
+- WHY ...: To simplify application deployment and ensure consistency across different environments.
+
+- HOW ...: Through a step-by-step tutorial covering Docker basics and a practical deployment example.
+
+- INSTALLED LIBRARIES:
+  - `docker --version` (check installation)
+  - `docker init` (initialize project)
+  - `docker build -t <image_name>` (build image)
+  - `docker run -p <host_port>:<container_port> <image_name>` (run container)
+  - `docker volume create <volume_name>` (create volume)
+  - `docker-compose up --build` (build and run with compose)
+  - `aws ecr get-login-password` (login to ECR)
+  - `docker tag <image_name> <ECR_repo_URI>` (tag image for ECR)
+  - `docker push <ECR_repo_URI>` (push image to ECR)

@@ -3,7 +3,7 @@ def hello(name):
     message()
 
 def message():
-    print('We are gald you are here')
+    print('We are glad you are here')
     
 name = 'bob'
 
