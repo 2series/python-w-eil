@@ -13,3 +13,5 @@ July 16, HTML Introduction
 July 18, CSS Introduction
 
 July 31, REST API
+
+August 2, Python Custom Functions & OS Module
