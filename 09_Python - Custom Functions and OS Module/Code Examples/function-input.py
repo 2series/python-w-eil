@@ -1,11 +1,14 @@
+# script function defined and called one value
+# call list of values
+
 def hello(name):
     print(f'Hello {name}')
 
-student = 'bob'
+# student = 'Alice'
 
-hello(student)
+# hello(student)
 
-# group = ['bob','sue','patty']
+group = ['bob','sue','patty'], 'imac'
 
-# for name in group:
-#     hello(name)
+for name in group:
+    hello(name)
