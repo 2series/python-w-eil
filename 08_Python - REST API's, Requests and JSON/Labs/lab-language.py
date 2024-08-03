@@ -1,4 +1,4 @@
-# script for languages spoken by countries
+# script uses the REST Countries API to retrieve a list of countries where a specific language is spoken
 
 from requests import get
 from json import dumps
