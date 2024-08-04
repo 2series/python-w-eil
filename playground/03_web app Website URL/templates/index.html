@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation Data</title>
+</head>
+<body>
+    <form method="post">
+        <label for="url">Enter a website URL:</label>
+        <input type="text" id="url" name="url">
+        <input type="submit" value="Get Geolocation Data">
+    </form>
+    {% if url %}
+        <h2>URL: {{ url }}</h2>
+        <h2>IP Address: {{ ip_address }}</h2>
+        <h2>Geolocation Data:</h2>
+        <pre>{{ geolocation_data | tojson }}</pre>
+    {% elif error %}
+        <h2>Error: {{ error }}</h2>
+    {% endif %}
+</body>
+</html>
