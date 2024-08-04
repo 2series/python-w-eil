@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Lookup</title>
+</head>
+<body>
+    <h1>Geolocation Lookup</h1>
+    <form method="POST">
+        <label for="ip_address">Enter IP Address:</label>
+        <input type="text" id="ip_address" name="ip_address">
+        <input type="submit" value="Lookup">
+    </form>
+    {% if error %}
+        <p style="color: red">{{ error }}</p>
+    {% elif geolocation_data %}
+        <h2>Geolocation Data for {{ ip_address }}</h2>
+        <ul>
+        {% for key, value in geolocation_data.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
