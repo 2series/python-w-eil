@@ -1,10 +1,13 @@
+
+# script that uses the OpenAI API to generate a 100-word essay for a blog post based on a user-provided title
+
 from openai import OpenAI
 import os
 
 client = OpenAI()
 
 
-os.system('clear') #Windows = 'cls'
+os.system('clear')
 
 while True:
     title = input('Title for Blog Post: ').title()

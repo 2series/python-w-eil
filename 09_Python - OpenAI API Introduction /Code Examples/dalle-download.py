@@ -1,7 +1,19 @@
+
+# script that uses the OpenAI API to generate an image based on a given prompt, and then saves the generated image to a local file
+
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
 from requests import get
 
-client = OpenAI()
+# Load the .env file
+load_dotenv()
+
+# Get the OpenAI API key from the .env file
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize the OpenAI client with the API key
+openai.api_key = openai_api_key
 
 query = 'a dog on the moon'
 

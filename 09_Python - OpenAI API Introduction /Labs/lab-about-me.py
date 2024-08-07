@@ -1,13 +1,16 @@
+
+# script is a simple chatbot that uses the OpenAI API to generate answers to user questions
+
 from openai import OpenAI
 from requests import get
 import os
 
 client = OpenAI()
 
-nationality = get('http://ip-api.com/json/').json() #Geo Data from IP Address API
+nationality = get('http://ip-api.com/json/').json() # Geo Data from IP Address API
 nationality = nationality['country']
 
-os.system('clear') #Windows = 'cls'
+os.system('clear')
 
 while True:
     query = input('Question: ')
