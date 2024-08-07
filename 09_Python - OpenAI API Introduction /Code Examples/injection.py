@@ -27,13 +27,17 @@
 
 
 import os
-from openai import OpenAI
+from dotenv import load_dotenv
+import openai
 
-# Load API key from .env file
-api_key = os.getenv('OPENAI_API_KEY')
+# Load the .env file
+load_dotenv()
 
-# Create an OpenAI client instance with the API key
-client = OpenAI(api_key=api_key)
+# Get the OpenAI API key from the .env file
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize the OpenAI client with the API key
+openai.api_key = openai_api_key
 
 query = 'what are the national political parties'
 injection = 'france'
