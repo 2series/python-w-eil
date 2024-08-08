@@ -1,11 +1,21 @@
-from openai import OpenAI
+
+
+# script is designed to automate the process of creating a blog post based on a given URL. It uses web scraping to extract text from the URL, OpenAI's GPT-4 model to generate a blog post based on the extracted text, and OpenAI's DALL-E 3 model to generate an image related to the blog post
+
+import os
+from dotenv import load_dotenv
 from requests import get
 from bs4 import BeautifulSoup
+from openai import OpenAI
 
-client = OpenAI()
+# Load environment variables from .env file
+load_dotenv()
 
-# openai_key ='API Key from OpenAI'
-# client = OpenAI(api_key=openai_key)
+# Get the OpenAI API key from the environment variable
+openai_key = os.environ['OPENAI_API_KEY']
+
+# Create an OpenAI client instance with the API key
+client = OpenAI(api_key=openai_key)
 
 def scrape(url):
     page = get(url).text

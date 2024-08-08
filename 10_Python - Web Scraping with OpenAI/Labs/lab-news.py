@@ -1,12 +1,20 @@
-from openai import OpenAI
+
+# 
+
+import os
+from dotenv import load_dotenv
 import feedparser
 from requests import get
-import os
+from openai import OpenAI
 
-client = OpenAI()
+# Load environment variables from .env file
+load_dotenv()
 
-# openai_key ='API Key from OpenAI'
-# client = OpenAI(api_key=openai_key)
+# Get the OpenAI API key from the environment variable
+openai_key = os.environ['OPENAI_API_KEY']
+
+# Create an OpenAI client instance with the API key
+client = OpenAI(api_key=openai_key)
 
 def scrape_feed(url):
     rss_feed = get(url).text

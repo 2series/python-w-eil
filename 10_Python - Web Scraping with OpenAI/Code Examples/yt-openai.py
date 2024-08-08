@@ -1,10 +1,20 @@
-from openai import OpenAI
+
+# script retrieves the transcript of a YouTube video using the YouTube Transcript API, and then uses the OpenAI API to analyze the transcript and answer a user-provided query
+
+
+import os
+from dotenv import load_dotenv
 from youtube_transcript_api import YouTubeTranscriptApi
+from openai import OpenAI
 
-client = OpenAI()
+# Load environment variables from .env file
+load_dotenv()
 
-# openai_key ='API Key from OpenAI'
-# client = OpenAI(api_key=openai_key)
+# Get the OpenAI API key from the environment variable
+openai_key = os.environ['OPENAI_API_KEY']
+
+# Create an OpenAI client instance with the API key
+client = OpenAI(api_key=openai_key)
 
 def transcript(video_id):
     script = YouTubeTranscriptApi.get_transcript(video_id)
