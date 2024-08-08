@@ -15,4 +15,3 @@ Key Concepts:
 
 In essence, a client asks for something using HTTP, and the server responds with it (or an error message if it can't find it)
 
-
