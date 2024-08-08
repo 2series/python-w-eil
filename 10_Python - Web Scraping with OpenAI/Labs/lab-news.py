@@ -1,5 +1,5 @@
 
-# 
+# script is a simple question-answering system that uses the OpenAI API to answer user queries based on the content of an RSS feed. The RSS feed is scraped from a specified URL, and the text is extracted and passed to the OpenAI API along with the user's query. The API generates a response based on the text and query, which is then printed to the console
 
 import os
 from dotenv import load_dotenv

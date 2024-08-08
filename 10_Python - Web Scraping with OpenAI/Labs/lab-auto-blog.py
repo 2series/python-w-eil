@@ -1,12 +1,26 @@
-from openai import OpenAI
+
+
+# script is designed to automate the process of generating blog posts based on articles from an RSS feed. It uses (NLP) and (ML) techniques to summarize and rewrite the articles
+
+
+# Overall, this script is designed to automate the process of generating blog posts based on articles from an RSS feed
+
+import os
+from dotenv import load_dotenv
 import feedparser
 from bs4 import BeautifulSoup
 from requests import get
+from openai import OpenAI
 
-client = OpenAI()
+# Load environment variables from .env file
+load_dotenv()
 
-# openai_key ='API Key from OpenAI'
-# client = OpenAI(api_key=openai_key)
+# Get the OpenAI API key from the environment variable
+openai_key = os.environ['OPENAI_API_KEY']
+
+# Create an OpenAI client instance with the API key
+client = OpenAI(api_key=openai_key)
+
 
 def build_list(url):
     rss_feed = get(url).text
