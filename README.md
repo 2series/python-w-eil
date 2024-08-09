@@ -14,3 +14,4 @@
 | August 2 | Python Custom Functions & OS Module |
 | August 6 | OpenAI Introduction |
 | August 8 | Web Scraping with OpenAI |
+| August 13 | Ollama for Local LLM AI Usage |
